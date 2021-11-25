@@ -19,3 +19,43 @@ a {
     font-weight: 700;
     letter-spacing: -0.5px;
 }
+
+.superbold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.muted_grey {
+    color: $muted-grey;
+}
+
+.bg_green {
+    background-color: $bg-light-green;
+}
+
+button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;              
+    border-radius: 5px;
+    color: white;
+    border: 1px solid $main-dark-green;
+
+    &.green {
+        background-color: $main-dark-green;
+        
+    }
+
+    &.transparent {
+        background-color: transparent;
+    }
+}
+
+.height_420 {
+    height: 420px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
