@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 a {
     text-decoration: inherit;
     color: inherit;
@@ -7,4 +9,13 @@ a {
     width: 62%;
     margin: auto;
     height: 100%;       
+}
+
+.text-green {
+    color: $main-dark-green;
+}
+
+.condensed {
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }

@@ -1,6 +1,9 @@
 <template>
-    <div class="header debug">
-        <div class="lg_container debug d-flex align-items-center justify-content-between">
+    <div class="header">
+
+        <!-- header top, contacts area -->
+
+        <div class="lg_container d-flex align-items-center justify-content-between">
             <div>
                 <i class="fas fa-clock p-2"></i>Open Hours: {{openTime.openingDay}} - {{openTime.closingDay}} - {{openTime.openingHour}} - {{openTime.closingHour}}
             </div>
@@ -20,6 +23,10 @@
             </div>
         </div>
 
+        <!-- //header top, contacts area -->
+
+        <!-- header bottom, nav area -->
+        
         <nav class="lg_container mt-3 d-flex justify-content-between">
             <div class="nav_left">
                 <span class="half_button">
@@ -31,7 +38,7 @@
             </div>
 
             <div class="nav_right">
-                <ul class="d-flex text-white">
+                <ul class="d-flex text-white condensed">
                     <li>HOME</li>
                     <li>SERVICES</li>
                     <li>SKILLS</li>
@@ -42,6 +49,8 @@
             </div>
         </nav>
         
+        <!-- //header bottom, nav area -->
+
     </div>
 </template>
 
@@ -96,7 +105,6 @@ export default {
         .nav_right {
             font-size: 1rem;
             li {
-                font-weight: 500;
                 list-style: none;
                 padding-left: 1rem;
                 padding-right: 1rem;

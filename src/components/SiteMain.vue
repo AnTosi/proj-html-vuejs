@@ -1,5 +1,8 @@
 <template>
     <main>
+
+        <!-- here start the section one, the one with the jumbotron -->
+
         <section class="one jumbosection">
             <div class="lg_container position-relative">
                 <div class="jumbotext text-white">
@@ -18,7 +21,16 @@
             </div>
         </section>
 
+        <!-- //here ends the section one, the one with the jumbotron -->
+
         <section class="two">
+            <div class="lg_container">
+                <div class="col-4">
+                    <div>
+                        <span class="text-green condensed">OUR BUSINESS AREAS</span>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
@@ -105,10 +117,10 @@ export default {
                 padding-bottom: 0.5rem;              
                 border-radius: 5px;
                 color: white;
-                border: 1px solid #058283;
+                border: 1px solid $main-dark-green;
             
                 &.green {
-                    background-color: #058283;
+                    background-color: $main-dark-green;
                     
                 }
 
@@ -117,6 +129,12 @@ export default {
                 }
             }
         }
+    }
+
+    section.two {
+        height: 730px;
+        background-color: #EEF4ED;
+        padding: 120px 1rem;
     }
 
 </style>
