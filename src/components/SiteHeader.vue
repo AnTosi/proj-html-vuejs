@@ -68,7 +68,6 @@ export default {
     @import '../assets/variables.scss';
 
     .header {
-        filter: brightness(1);
         width: 100%;
         background-color: #21333E;
         color: $muted-grey;
@@ -79,22 +78,13 @@ export default {
         top: 0;
         left: 0;
 
-        .lg_container {
-            width: 62%;
-            margin: auto;
-            height: 100%;
-            // color: ;
-        
-        }
-
         .nav_left {
             font-size: 1.3rem;
             font-weight: 500;
 
             .half_button {
-            background-color: #08a0a057;
+            background-color: #08a0a04b;
             color: #08A0A0;
-            height: 50px;
             padding-left: 1.5rem;
             border-top-left-radius: 1.3rem;
             border-bottom-left-radius: 1.3rem;
@@ -112,6 +102,7 @@ export default {
                 padding-right: 1rem;
                 padding-top: 0.5rem;
                 padding-bottom: 0.5rem;
+                border-radius: 5px;
                 &.active {
                     // background-color: #048383;
                     background-color: #058283;
