@@ -68,10 +68,16 @@ export default {
     @import '../assets/variables.scss';
 
     .header {
+        filter: brightness(1);
         width: 100%;
         background-color: #21333E;
         color: $muted-grey;
         font-size: 0.8rem;
+        z-index: 3;
+        position: absolute;
+        height: 35px;
+        top: 0;
+        left: 0;
 
         .lg_container {
             width: 62%;

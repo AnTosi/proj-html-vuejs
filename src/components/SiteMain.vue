@@ -48,7 +48,7 @@ export default {
         background-image: url("../assets/jumbo.jpg");
         height: 862px;
         background-position-y: 100%;
-        filter: brightness(0.6);
+        filter: brightness(0.7);
         margin-top: -50px;
     }
 </style>
