@@ -1,0 +1,54 @@
+<template>
+    <div class="header debug">
+        <div class="lg_container debug d-flex align-items-center justify-content-between">
+            <div>
+                <i class="fas fa-clock p-2"></i>Open Hours: {{openTime.openingDay}} - {{openTime.closingDay}} - {{openTime.openingHour}} - {{openTime.closingHour}}
+            </div>
+            <div class="contacts">
+                <span class="phoneComponent px-3">
+                    <i class="fas fa-phone px-2"></i>
+                    <a href="#">{{contacts.phoneNumber}}</a>
+                </span>
+                <span class="mailComponent px-3">
+                    <i class="fas fa-envelope px-2"></i>
+                    <a href="#">{{contacts.mailAddress}}</a>
+                </span>
+                <a href="#"><i class="fab fa-facebook-f px-3"></i></a>
+                <a href=""><i class="fab fa-twitter px-3" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in px-3"></i></a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'SiteHeader',
+    props: {
+        openTime: Object,
+        contacts: Object
+    }
+}
+
+</script>
+
+<style lang="scss">
+
+    @import '../assets/variables.scss';
+
+    .header {
+        width: 100%;
+        background-color: #21333E;
+        height: 35px;
+        color: $muted-grey;
+        font-size: 0.8rem;
+    }
+
+    .lg_container {
+        width: 62%;
+        margin: auto;
+        height: 100%;
+        // color: ;
+    
+    } 
+</style>
