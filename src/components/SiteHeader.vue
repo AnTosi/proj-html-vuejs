@@ -19,6 +19,29 @@
                 <a href="#"><i class="fab fa-linkedin-in px-3"></i></a>
             </div>
         </div>
+
+        <nav class="lg_container my-4 d-flex justify-content-between">
+            <div class="nav_left">
+                <span class="half_button">
+                    NEX
+                </span>
+                <span class="text- white">
+                    GEN
+                </span>
+            </div>
+
+            <div class="nav_right">
+                <ul class="d-flex">
+                    <li>HOME</li>
+                    <li>SERVICES</li>
+                    <li>SKILLS</li>
+                    <li>PARTNERS</li>
+                    <li>BLOG</li>
+                    <li class="active">GET IN TOUCH</li>
+                </ul>
+            </div>
+        </nav>
+        
     </div>
 </template>
 
@@ -50,13 +73,50 @@ export default {
         height: 35px;
         color: $muted-grey;
         font-size: 0.8rem;
-    }
 
-    .lg_container {
-        width: 62%;
-        margin: auto;
-        height: 100%;
-        // color: ;
-    
-    } 
+        .lg_container {
+            width: 62%;
+            margin: auto;
+            height: 100%;
+            // color: ;
+        
+        }
+
+        .nav_left {
+            font-size: 1.3rem;
+            font-weight: 500;
+
+            .half_button {
+            background-color: #08818136;
+            color: #088181ad;
+            height: 50px;
+            padding-left: 1.5rem;
+            border-top-left-radius: 1.3rem;
+            border-bottom-left-radius: 1.3rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            }
+        }
+
+        .nav_right {
+            font-size: 1rem;
+            li {
+                font-weight: 500;
+                list-style: none;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                &.active {
+                    // background-color: #048383;
+                    background-color: #088181;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+    }
 </style>
