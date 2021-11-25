@@ -5,14 +5,15 @@
                 <i class="fas fa-clock p-2"></i>Open Hours: {{openTime.openingDay}} - {{openTime.closingDay}} - {{openTime.openingHour}} - {{openTime.closingHour}}
             </div>
             <div class="contacts">
-                <span class="phoneComponent px-3">
-                    <i class="fas fa-phone px-2"></i>
-                    <a href="#">{{contacts.phoneNumber}}</a>
-                </span>
-                <span class="mailComponent px-3">
-                    <i class="fas fa-envelope px-2"></i>
-                    <a href="#">{{contacts.mailAddress}}</a>
-                </span>
+
+                <PhoneComponent
+                :contacts="contacts"
+                />
+
+                <MailComponent
+                :contacts="contacts"
+                />
+
                 <a href="#"><i class="fab fa-facebook-f px-3"></i></a>
                 <a href=""><i class="fab fa-twitter px-3" aria-hidden="true"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in px-3"></i></a>
@@ -22,12 +23,19 @@
 </template>
 
 <script>
+import MailComponent from './MailComponent.vue';
+import PhoneComponent from './PhoneComponent.vue';
+
 export default {
+  components: { 
+        PhoneComponent,
+        MailComponent 
+    },
     name: 'SiteHeader',
     props: {
         openTime: Object,
         contacts: Object
-    }
+    },
 }
 
 </script>

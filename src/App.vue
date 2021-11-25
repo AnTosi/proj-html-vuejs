@@ -1,28 +1,96 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SiteHeader
+    :openTime="openTime"
+    :contacts="contacts"
+    />
+    <div class="sitemain">
+      <section class="one jumbosection">
+        <div class="jumbotext"></div>
+      </section>
+
+      <section class="two">
+
+      </section>
+
+      <section class="three">
+
+      </section>
+
+      <section class="four">
+
+      </section>
+
+      <section class="five">
+
+      </section>
+
+      <section class="six">
+
+      </section>
+
+      <section class="seven">
+
+      </section>
+
+      <section class="eight">
+      
+      </section> 
+      
+    </div>
+
+    <footer>
+
+    </footer>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SiteHeader from './components/SiteHeader.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SiteHeader
+  },
+  data(){
+    return {
+
+      openTime: {
+        "openingDay": "Mon",
+        "closingDay": "Sat",
+        "openingHour": "9:00",
+        "closingHour": "18:00",
+      },
+
+      contacts: {
+        "phoneNumber": "+1 (305) 1234-5678",
+        "mailAddress": "hello@example.com",
+        "address": "Main Avenue, 987"
+      }
+
+    }
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+// #app {
+//   font-family: Avenir, Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-align: center;
+//   color: #2c3e50;
+//   margin-top: 60px;
+// }
+
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import './assets/common.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
