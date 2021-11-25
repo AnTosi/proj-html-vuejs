@@ -5,37 +5,7 @@
     :contacts="contacts"
     />
     <div class="sitemain">
-      <section class="one jumbosection">
-        <div class="jumbotext"></div>
-      </section>
-
-      <section class="two">
-
-      </section>
-
-      <section class="three">
-
-      </section>
-
-      <section class="four">
-
-      </section>
-
-      <section class="five">
-
-      </section>
-
-      <section class="six">
-
-      </section>
-
-      <section class="seven">
-
-      </section>
-
-      <section class="eight">
-      
-      </section> 
+      <SiteMain/>
       
     </div>
 
@@ -48,11 +18,13 @@
 
 <script>
 import SiteHeader from './components/SiteHeader.vue';
+import SiteMain from './components/SiteMain.vue';
 
 export default {
   name: 'App',
   components: {
-    SiteHeader
+    SiteHeader,
+    SiteMain
   },
   data(){
     return {

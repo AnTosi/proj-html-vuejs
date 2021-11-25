@@ -20,18 +20,18 @@
             </div>
         </div>
 
-        <nav class="lg_container my-4 d-flex justify-content-between">
+        <nav class="lg_container mt-3 d-flex justify-content-between">
             <div class="nav_left">
                 <span class="half_button">
                     NEX
                 </span>
-                <span class="text- white">
+                <span class="text-white">
                     GEN
                 </span>
             </div>
 
             <div class="nav_right">
-                <ul class="d-flex">
+                <ul class="d-flex text-white">
                     <li>HOME</li>
                     <li>SERVICES</li>
                     <li>SKILLS</li>
@@ -70,7 +70,6 @@ export default {
     .header {
         width: 100%;
         background-color: #21333E;
-        height: 35px;
         color: $muted-grey;
         font-size: 0.8rem;
 
@@ -87,14 +86,14 @@ export default {
             font-weight: 500;
 
             .half_button {
-            background-color: #08818136;
-            color: #088181ad;
+            background-color: #08a0a057;
+            color: #08A0A0;
             height: 50px;
             padding-left: 1.5rem;
             border-top-left-radius: 1.3rem;
             border-bottom-left-radius: 1.3rem;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
             }
         }
 
@@ -109,7 +108,7 @@ export default {
                 padding-bottom: 0.5rem;
                 &.active {
                     // background-color: #048383;
-                    background-color: #088181;
+                    background-color: #058283;
                 }
                 &:hover {
                     cursor: pointer;
