@@ -11,6 +11,12 @@ a {
     height: 100%;       
 }
 
+.left_container {
+    margin-left: 19%;
+    width: 31%;
+
+}
+
 .text-green {
     color: $main-dark-green;
 }
@@ -58,4 +64,70 @@ button {
 
 .fw-600 {
     font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.highlighted {
+    background-color: #08a0a0b6;
+}
+
+.grey_circle_border {
+    height: 115px;
+    width: 115px;
+    font-size: 1.5rem;
+    border: 9px solid #232328;
+    border-radius: 50%;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    position: relative;
+
+    .completion_1percent {
+        position: absolute;
+        display: inline-block;
+        width: 9px;
+        height: 2px;
+        left: 0;
+        top: 50%;
+        transform: translate(-100%, -50%);
+        background-color: $main-dark-green;
+    }
+    
+}
+
+.font_size_3 {
+    font-size: 2.5rem;
+}
+
+.text_lightgrey {
+    color: #C0C3D0;
+}
+
+.sm_circles_container {
+
+    width: 138px;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 2;
+
+    .sm_circle {
+        background-color: #B3E1DB;
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0.6;
+    }
+
+
 }

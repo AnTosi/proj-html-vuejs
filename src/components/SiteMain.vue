@@ -7,9 +7,11 @@
             <div class="lg_container position-relative">
                 <div class="jumbotext text-white">
                     <span class="title superbold">
-                        <span class="underline">
+                        <span class="position-relative title superbold">
+                            Logistics
+                            <span class="underline"></span>
                         </span>
-                        Logistics that goes further.
+                         that goes further.
                     </span>
                     <p class="mt-3 pr-5">
                         For 20 years working with the most innovative in the field of transport
@@ -73,7 +75,62 @@
         </section>
 
         <section class="three">
+            <div class="left_container">
+                <span class="text-green condensed">
+                    ABOUT THE NETWORK
+                </span>
+                <h3 class="superbold text-white my-4">
+                    <span class="superbold text-white highlighted">The</span>
+                    Company
+                </h3>
+                <p class="text-muted mb-5">
+                    With all of this expertise and capability comes an unrivalled commitment to customer service.
+                </p>
 
+                <div class="d-flex align-items-center mb-5 pt-5">
+                    <span class="grey_circle_border col-3 bold text-muted">
+                        <span class="text_lightgrey">
+                            <span class="font_size_3">0</span>%
+                        </span>
+                    </span>
+                    <div class="col-9">
+                        <h4 class="bold mb-3 text-white">Leadership</h4>
+                        <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center pt-4 mb-5">
+                    <span class="grey_circle_border col-3 bold text-muted">
+                        <span class="text_lightgrey">
+                            <span class="font_size_3">0</span>%
+                        </span>
+                    </span>
+                    <div class="col-9">
+                        <h4 class="bold mb-3 text-white">Psychology</h4>
+                        <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center pt-4 mb-5">
+                    <span class="grey_circle_border col-3 bold text-muted">
+                        <span class="completion_1percent"></span>
+                        <span class="text_lightgrey">
+                            <span class="font_size_3">1</span>%
+                        </span>
+                    </span>
+                    <div class="col-9">
+                        <h4 class="bold mb-3 text-white">Flexibility</h4>
+                        <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pic_right">
+                <img src="../assets/about-5.jpg" alt="">
+            </div>
+            <div class="sm_circles_container d-flex flex-wrap">
+                <span class="sm_circle mx-1" v-for="index in 36" :key="index"></span>
+            </div>
         </section>
 
         <section class="four">
@@ -136,9 +193,10 @@ export default {
                 display: inline-block;
                 position: absolute;
                 background-color: #08a0a0b6;
-                width: 100%;
+                width: 98%;
                 height: 2rem;
                 top: 2.7rem;
+                left: 0;
                 z-index: -1;
                 opacity: 0.6;
             }
@@ -154,62 +212,58 @@ export default {
         }
     }
 
-    section.two {
-        height: 730px;
-        background-color: #EEF4ED;
-        padding: 120px 1rem;
-        position: relative;
-
+    section {
         h3 {
             font-size: 3rem;
         }
+        &.two {
+            height: 730px;
+            background-color: #EEF4ED;
+            padding: 120px 1rem;
+            position: relative;
 
-        p.pr-4 {
-            padding-right: 2rem;
-        } 
+            p.pr-4 {
+                padding-right: 2rem;
+            } 
 
-        span.bg_green {
-            color: $main-dark-green;
-            border-radius: 3px;
+            span.bg_green {
+                color: $main-dark-green;
+                border-radius: 3px;
+            }
+
+            .cards {
+                background-color: white;
+                padding: 15% 15%;
+                border-radius: 0.5rem;
+                height: 420px;
+
+                img {
+                    // height: 165px;
+                    width: 100%;
+                }
+
+                h4 {
+                    font-size: 1.6rem;
+                }
+            }
         }
 
-        .cards {
-            background-color: white;
-            padding: 15% 15%;
-            border-radius: 0.5rem;
-            height: 420px;
+        &.three {
+            padding: 120px 0;
+            background-color: black;
+            position:relative;
 
-            img {
-                // height: 165px;
-                width: 100%;
+            .pic_right {
+                width: 50%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                text-align: right;
+                img {
+                    height: 100%;
+                }
             }
-
-            h4 {
-                font-size: 1.6rem;
-            }
-        }
-
-        .sm_circles_container {
-
-            width: 138px;
-            height: 60px;
-            justify-content: space-around;
-            align-items: center;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%, 50%);
-
-            .sm_circle {
-                background-color: #B3E1DB;
-                height: 7px;
-                width: 7px;
-                border-radius: 50%;
-                display: inline-block;
-                opacity: 0.8;
-            }
-
-
         }
     }
 
