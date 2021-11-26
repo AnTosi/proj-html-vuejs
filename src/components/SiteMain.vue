@@ -25,11 +25,13 @@
 
         <!-- //here ends the section one, the one with the jumbotron -->
 
+        <!-- section 2 -->
+
         <section class="two">
             <div class="lg_container d-flex">
                 <div class="col-4 height_420">
                     <div class="px-3">
-                        <span class="text-green condensed">OUR BUSINESS AREAS</span>
+                        <span class="pre_title">OUR BUSINESS AREAS</span>
                         <h3 class="superbold my-4">
                             Logistics Services
                         </h3>
@@ -39,9 +41,9 @@
                         </p>
 
                         <div>
-                            <span class="bg_green p-2">Tradition</span>
-                            <span class="bg_green p-2 mx-3">Quality</span>
-                            <span class="bg_green p-2">Security</span>
+                            <span class="green_on_green p-2">Tradition</span>
+                            <span class="green_on_green p-2 mx-3">Quality</span>
+                            <span class="green_on_green p-2">Security</span>
                         </div>
 
                         <button class="green mt-4">
@@ -52,7 +54,7 @@
 
                 <div class="height_420 col-4 px-2">
                     <div class="cards">
-                        <img src="../assets/gallery-3.jpg" alt="hands holding a paper with coloured charts and a phone with the same charts">
+                        <img src="../assets/img/gallery-3.jpg" alt="hands holding a paper with coloured charts and a phone with the same charts">
                         <h4 class="py-3 fw-600">Technology</h4>
                         <p class="text-muted mb-0">Focused on developing technology solutions adapted to our client's needs.</p>
                     </div>
@@ -60,7 +62,7 @@
 
                 <div class="height_420 col-4 px-2">
                     <div class="cards">
-                        <img src="../assets/gallery-5.jpg" alt="dude closing a box with scotch tape">
+                        <img src="../assets/img/gallery-5.jpg" alt="dude closing a box with scotch tape">
                         <h4 class="py-3 fw-600">Transport</h4>
                         <p class="text-muted mb-0">
                             We develop operational strategies to improve logistical efficiency.
@@ -74,9 +76,13 @@
             </div>
         </section>
 
+        <!-- //section 2 -->
+
+        <!-- section 3 -->
+
         <section class="three">
             <div class="left_container">
-                <span class="text-green condensed">
+                <span class="pre_title">
                     ABOUT THE NETWORK
                 </span>
                 <h3 class="superbold text-white my-4">
@@ -126,33 +132,79 @@
 
             </div>
             <div class="pic_right">
-                <img src="../assets/about-5.jpg" alt="huge building with glass wall, picture taken from below with a cool angle">
+                <img src="../assets/img/about-5.jpg" alt="huge building with glass wall, picture taken from below with a cool angle">
             </div>
             <div class="sm_circles_container d-flex flex-wrap">
                 <span class="sm_circle mx-1" v-for="index in 36" :key="index"></span>
             </div>
         </section>
 
+        <!-- //section 3 -->
+
+        <!-- section 4 -->
+
         <section class="four">
             <div class="lg_container d-flex align-items-center justify-content-around">
-                <img src="../assets/logo-5.png" alt="less logo, less written between curly brackets">
+                <img src="../assets/img/logo-5.png" alt="less logo, less written within curly brackets">
 
-                <img src="../assets/logo-1.png" alt="">
+                <img src="../assets/img/logo-1.png" alt="woocommerce logo,woocommerce written with woo in a speech bubble">
 
-                <img src="../assets/logo-2.png" alt="">
+                <img src="../assets/img/logo-2.png" alt="pingdom logo, pingdom written with a rounded font">
 
-                <img src="../assets/logo-3.png" alt="">
+                <img src="../assets/img/logo-3.png" alt="jQuery logo, jQuery written in italic">
 
-                <img src="../assets/logo-4.png" alt="">
+                <img src="../assets/img/logo-4.png" alt="">
                 
-                <img src="../assets/logo-5.png" alt="">
+                <img src="../assets/img/logo-5.png" alt="less logo, less written within curly brackets">
             
             </div>
         </section>
 
+        <!-- //section 4 -->
+
+        <!-- section 5 -->
+
         <section class="five">
+            <div class="lg_container">
+                <span class="pre_title">
+                    OUR EDITORIAL CONTENT
+                </span>
+                <h3 class="superbold text-black mt-4 mb-5">
+                    Latest
+                    <span class="green_on_green superbold px-2"> News</span>
+                </h3>
+                <div class="d-flex justify-content-between  align-items-end">
+                    <p class="text-muted mb-0">Every week we publish content about what is best in the business world.</p>
+                    <button class="green">SEE ALL</button>
+                </div>
+
+                <div class="news_container d-flex justify-content-around mt-5">
+                    <div class="col-4 px-3">
+                        <!-- <img src="../assets/img/news-2.jpg" alt=""> -->                   
+                        <NewsCard
+                        :newsImage="news[0].image"
+                        :newsText="news[0].text"
+                        />
+                    </div>
+                    <div class="col-4 px-3">
+                        <NewsCard
+                        :newsImage="news[1].image"
+                        :newsText="news[1].text"
+                        />
+                    </div>
+                    <div class="col-4 px-3">
+                        <NewsCard
+                        :newsImage="news[2].image"
+                        :newsText="news[2].text"
+                        />
+                    </div>
+                </div>
+            </div>
 
         </section>
+
+        <!-- //section 5 -->
+
 
         <section class="six">
 
@@ -170,7 +222,41 @@
 </template>
 
 <script>
+import NewsCard from './NewsCard.vue';
 export default {
+  components: { 
+      NewsCard 
+    },
+    data() {
+        return {
+            news: [
+                {
+                    image: "news-1",
+                    text: "Increasing creativity is possible for everyone"
+                },
+                {
+                    image: 'news-2',
+                    text: "Because market research is bart of the business plan"
+                },
+
+                {
+                    image: "news-3",
+                    text: "Working from home is now a trend"
+                },
+
+                {
+                    image: "news-4",
+                    text: ""
+                },
+
+                {
+                    image:"news-5",
+                    text: ""
+                }
+
+            ] 
+        }
+    }
     
 }
 </script>
@@ -181,7 +267,7 @@ export default {
 @import '../assets/variables.scss';
 
     .jumbosection {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/jumbo.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/jumbo.jpg");
         height: 862px;
         background-position-y: 100%;
         background-repeat: no-repeat;
@@ -239,11 +325,6 @@ export default {
                 padding-right: 2rem;
             } 
 
-            span.bg_green {
-                color: $main-dark-green;
-                border-radius: 3px;
-            }
-
             .cards {
                 background-color: white;
                 padding: 15% 15%;
@@ -262,8 +343,8 @@ export default {
         }
 
         &.three {
-            padding: 120px 0;
-            background-color: black;
+            padding: 115px 0;
+            background-color: $black;
             position:relative;
 
             .pic_right {
@@ -282,14 +363,23 @@ export default {
         }
 
         &.four {
-            padding: 100px 0;
+            padding: 115px 0;
             background-color: $bg-superlight-green;
 
             img {
                 opacity: 0.5;
             }
 
-        } 
+        }
+
+        &.five {
+            padding: 115px 0;
+            
+            .news_container {
+                margin-right: -1rem;
+                margin-left: -1rem;
+            }
+        }
     }
 
 </style>

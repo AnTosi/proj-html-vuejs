@@ -129,5 +129,18 @@ button {
         opacity: 0.6;
     }
 
-
 }
+
+.green_on_green {
+    color: $main-dark-green;
+    background-color: $bg-light-green;
+    border-radius: 3px;
+}
+
+.pre_title {
+    color: $main-dark-green;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 0.9rem;
+}
+
