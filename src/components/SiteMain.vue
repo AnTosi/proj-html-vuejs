@@ -207,7 +207,9 @@
 
 
         <section class="six">
+            <div class="sm_container">
 
+            </div>
         </section>
 
         <section class="seven">
@@ -378,6 +380,18 @@ export default {
             .news_container {
                 margin-right: -1rem;
                 margin-left: -1rem;
+            }
+        }
+
+        &.six {
+            padding: 115px 0;
+            background-image: url('../assets/img/bg-1.jpg');
+            height: 455px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 50%;
+            .sm_container{
+                width: 50%;
             }
         }
     }
