@@ -13,7 +13,7 @@
                         </span>
                          that goes further.
                     </span>
-                    <p class="mt-3 pr-5">
+                    <p class="mt-3">
                         For 20 years working with the most innovative in the field of transport
                     </p>
 
@@ -305,7 +305,7 @@ export default {
             p {
                 color: $muted-grey;
                 font-size: 1.2rem;
-                padding-right: 5rem;
+                padding-right: 2rem;
                 padding-bottom: 2rem;
             }
 
