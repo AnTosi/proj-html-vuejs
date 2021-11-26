@@ -67,6 +67,9 @@
                 </div>
             </div>
 
+            <div class="sm_circles_container d-flex flex-wrap">
+                <span class="sm_circle mx-1" v-for="index in 36" :key="index"></span>
+            </div>
         </section>
 
         <section class="three">
@@ -137,6 +140,7 @@ export default {
                 height: 2rem;
                 top: 2.7rem;
                 z-index: -1;
+                opacity: 0.6;
             }
 
             p {
@@ -154,6 +158,7 @@ export default {
         height: 730px;
         background-color: #EEF4ED;
         padding: 120px 1rem;
+        position: relative;
 
         h3 {
             font-size: 3rem;
@@ -182,6 +187,29 @@ export default {
             h4 {
                 font-size: 1.6rem;
             }
+        }
+
+        .sm_circles_container {
+
+            width: 138px;
+            height: 60px;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+
+            .sm_circle {
+                background-color: #B3E1DB;
+                height: 7px;
+                width: 7px;
+                border-radius: 50%;
+                display: inline-block;
+                opacity: 0.8;
+            }
+
+
         }
     }
 
