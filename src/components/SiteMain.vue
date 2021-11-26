@@ -126,7 +126,7 @@
 
             </div>
             <div class="pic_right">
-                <img src="../assets/about-5.jpg" alt="">
+                <img src="../assets/about-5.jpg" alt="huge building with glass wall, picture taken from below with a cool angle">
             </div>
             <div class="sm_circles_container d-flex flex-wrap">
                 <span class="sm_circle mx-1" v-for="index in 36" :key="index"></span>
@@ -134,7 +134,20 @@
         </section>
 
         <section class="four">
+            <div class="lg_container d-flex align-items-center justify-content-around">
+                <img src="../assets/logo-5.png" alt="less logo, less written between curly brackets">
 
+                <img src="../assets/logo-1.png" alt="">
+
+                <img src="../assets/logo-2.png" alt="">
+
+                <img src="../assets/logo-3.png" alt="">
+
+                <img src="../assets/logo-4.png" alt="">
+                
+                <img src="../assets/logo-5.png" alt="">
+            
+            </div>
         </section>
 
         <section class="five">
@@ -218,7 +231,7 @@ export default {
         }
         &.two {
             height: 730px;
-            background-color: #EEF4ED;
+            background-color: $bg-superlight-green;
             padding: 120px 1rem;
             position: relative;
 
@@ -262,9 +275,21 @@ export default {
                 text-align: right;
                 img {
                     height: 100%;
+                    width: 100%;
+                    object-fit: cover;
                 }
             }
         }
+
+        &.four {
+            padding: 100px 0;
+            background-color: $bg-superlight-green;
+
+            img {
+                opacity: 0.5;
+            }
+
+        } 
     }
 
 </style>
