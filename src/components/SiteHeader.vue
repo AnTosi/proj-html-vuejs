@@ -60,6 +60,7 @@ export default {
         MailComponent,
         NexGen 
     },
+    
     name: 'SiteHeader',
     props: {
         openTime: Object,

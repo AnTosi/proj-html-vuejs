@@ -1,7 +1,7 @@
 <template>
     <span class="phoneComponent contact_component px-3 d-flex align-items-center">
         <span class="icon">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-map-marker-alt px-2"></i>
         </span>                  
         <a href="#">{{contacts.address}}</a>
     </span>
@@ -10,7 +10,7 @@
 <script>
 export default {
     props: {
-        "contacts": Object,
+        contacts: Object,
     }
 }
 </script>

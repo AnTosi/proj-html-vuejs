@@ -12,7 +12,7 @@
 
     <footer>
       <SiteFooter
-      :contacts="Object"/>
+      :contacts="contacts"/>
     </footer>
     
   </div>
