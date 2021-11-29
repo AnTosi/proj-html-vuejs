@@ -29,16 +29,11 @@
         
         <nav class="lg_container mt-3 d-flex justify-content-between">
             <div class="nav_left">
-                <span class="half_button">
-                    NEX
-                </span>
-                <span class="text-white">
-                    GEN
-                </span>
+                <NexGen/>
             </div>
 
             <div class="nav_right">
-                <ul class="d-flex text-white condensed">
+                <ul class="d-flex text-white condensed600">
                     <li>HOME</li>
                     <li>SERVICES</li>
                     <li>SKILLS</li>
@@ -56,12 +51,14 @@
 
 <script>
 import MailComponent from './MailComponent.vue';
+import NexGen from './NexGen.vue';
 import PhoneComponent from './PhoneComponent.vue';
 
 export default {
   components: { 
         PhoneComponent,
-        MailComponent 
+        MailComponent,
+    NexGen 
     },
     name: 'SiteHeader',
     props: {
@@ -86,21 +83,6 @@ export default {
         height: 35px;
         top: 0;
         left: 0;
-
-        .nav_left {
-            font-size: 1.3rem;
-            font-weight: 500;
-
-            .half_button {
-            background-color: #08a0a04b;
-            color: #08A0A0;
-            padding-left: 1.5rem;
-            border-top-left-radius: 1.3rem;
-            border-bottom-left-radius: 1.3rem;
-            padding-top: 0.4rem;
-            padding-bottom: 0.4rem;
-            }
-        }
 
         .nav_right {
             font-size: 1rem;

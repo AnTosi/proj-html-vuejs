@@ -21,7 +21,12 @@ a {
     color: $main-dark-green;
 }
 
-.condensed {
+.condensed600 {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.condensed700 {
     font-weight: 700;
     letter-spacing: -0.5px;
 }
