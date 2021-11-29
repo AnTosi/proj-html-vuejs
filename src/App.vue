@@ -5,7 +5,8 @@
     :contacts="contacts"
     />
     <div class="sitemain">
-      <SiteMain/>
+      <SiteMain
+      :contacts="contacts"/>
       
     </div>
 

@@ -47,6 +47,7 @@ button {
     border-radius: 5px;
     color: white;
     border: 1px solid $main-dark-green;
+    font-weight: 500;
 
     &.green {
         background-color: $main-dark-green;
@@ -153,5 +154,9 @@ button {
 
 .pr-4 {
     padding-right: 3rem;
+}
+
+.pl-4 {
+    padding-left: 3rem;
 }
 

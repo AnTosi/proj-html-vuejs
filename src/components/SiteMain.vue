@@ -209,7 +209,7 @@
         <section class="six">
             <div class="sm_container d-flex">
                 <div class="left col-6">
-                    <div class="pre_title">OUR EDITORIAL CONTENT</div>
+                    <span class="pre_title">NEWSLETTER</span>
                     <h3 class="superbold text-white my-4">
                         <span class="superbold text-white highlighted px-3">Know</span>
                         First
@@ -228,8 +228,69 @@
             </div>
         </section>
 
-        <section class="seven">
+        <!-- //section 6 -->
 
+        <!-- section 7 -->
+
+        <section class="seven">
+            <div class="lg_container d-flex">
+                <div class="left col-8">
+                    <span class="pre_title">SEND A MESSAGE</span>
+                    <h3 class="superbold text-black mt-4 mb-4">
+                        Get in 
+                        <span class="green_on_green superbold px-2"> Touch</span>
+                    </h3>
+                    <p class="text-muted">
+                        We will respond to your message as soon as possible.
+                    </p>
+
+                    <div class="form_container d-flex flex-wrap">
+                        <div class="col-6 input_container p-2"><input type="text" class="form_item" placeholder="Name"></div>
+                        <div class="col-6 input_container p-2"><input type="text" class="form_item" placeholder="Email"></div>
+                        <div class="col-6 input_container p-2"><input type="text" class="form_item" placeholder="Phone"></div>
+                        <div class="col-6 input_container p-2">
+                            <select name="More Info" id="MoreInfo" class="form_item text-muted">
+                                <option value="More Info">More Info</option>
+                            </select>            
+                        </div>
+                        <div class="col-12 input_container p-2"><textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message" class="form_item"></textarea></div>
+                        <button class="green mt-4 mx-2">SEND</button>
+                    </div>
+                </div>
+
+                <div class="right pl-4"> 
+                    <h5 class="bold">
+                        Example Inc.
+                    </h5>
+
+                    <p class="my-3 text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="my-3 text-muted">
+                        Eum autem reprehenderit quos libero harum laudantium mollitia?
+                    </p>
+                    
+                    <div class="text-green">
+                        <div class="py-2">
+                            <PhoneComponent
+                            :contacts="contacts"
+                            />
+                        </div>
+                        <div class="py-2">
+                            <MailComponent
+                            :contacts="contacts"
+                            />
+                        </div>
+                        <div class="py-2">
+                            <AddressComponent
+                            :contacts="contacts"
+                            />
+                        </div>
+                        <button class="transparent text-green mt-3">VIEW MAP</button>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <section class="eight">
@@ -241,10 +302,23 @@
 
 <script>
 import NewsCard from './NewsCard.vue';
+import PhoneComponent from './PhoneComponent.vue';
+import MailComponent from './MailComponent.vue';
+import AddressComponent from './AddressComponent.vue';
+
 export default {
   components: { 
-      NewsCard 
+      NewsCard,
+      PhoneComponent,
+      MailComponent,
+    AddressComponent
+
     },
+
+    props: {
+        "contacts": Object,
+    },
+
     data() {
         return {
             news: [
@@ -412,10 +486,58 @@ export default {
                 background-color: rgba(255, 255, 255, 0.568);
                 border: none;
                 border-radius: 5px;
-                height: 50px;
+                height: 3rem;
                 margin-bottom: 20px;
                 padding: 1rem;
             }
+        }
+
+        &.seven {
+            padding: 120px 0;
+            background-color: $bg-superlight-green;
+
+            .form_item{
+                width: 100%;
+                background-color: #7373732d;
+                border-radius: 5px;
+                border: none;
+                padding: 1rem;
+            }
+
+            input {
+
+                height: 3rem;
+                
+            }
+
+            select {
+                height: 3rem;
+            }
+
+            textarea {
+                resize: none;
+            }
+            .contact_component {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                width: 100%;
+            }
+
+            span.icon {
+                display: flex;
+                background-color: $bg-light-green;
+                padding: 1rem;
+                color: $main-dark-green;
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;  
+                margin-right: 1rem;
+            }
+
+
         }
     }
 

@@ -7,7 +7,7 @@
             <div>
                 <i class="fas fa-clock p-2"></i>Open Hours: {{openTime.openingDay}} - {{openTime.closingDay}} - {{openTime.openingHour}} - {{openTime.closingHour}}
             </div>
-            <div class="contacts">
+            <div class="contacts d-flex">
 
                 <PhoneComponent
                 :contacts="contacts"
