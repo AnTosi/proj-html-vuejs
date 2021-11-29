@@ -3,7 +3,7 @@
         <div class="lg_container d-flex">
             <div class="col-3">
                 <NexGen/>
-                <p class="text-muted my-4 pb-2">
+                <p class="muted-grey my-4 pb-2">
                     A functional HTML Template for Corporate & Business.
                 </p>
                 <div>
