@@ -86,7 +86,7 @@
                     ABOUT THE NETWORK
                 </span>
                 <h3 class="superbold text-white my-4">
-                    <span class="superbold text-white highlighted">The</span>
+                    <span class="superbold text-white highlighted px-2">The</span>
                     Company
                 </h3>
                 <p class="text-muted mb-5">
@@ -207,7 +207,23 @@
 
 
         <section class="six">
-            <div class="sm_container">
+            <div class="sm_container d-flex">
+                <div class="left col-6">
+                    <div class="pre_title">OUR EDITORIAL CONTENT</div>
+                    <h3 class="superbold text-white my-4">
+                        <span class="superbold text-white highlighted px-3">Know</span>
+                        First
+                    </h3>
+                    <p class="text_lightgrey mb-5 pr-4">
+                        Follow closely and receive content about our company and the news of the current market.
+                    </p>              
+                </div>
+
+                <div class="right col-6">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <button class="green">SUBSCRIBE</button>
+                </div>
 
             </div>
         </section>
@@ -390,8 +406,15 @@ export default {
             background-repeat: no-repeat;
             background-size: cover;
             background-position-y: 50%;
-            .sm_container{
-                width: 50%;
+            input {
+                width: 90%;
+                margin: auto;
+                background-color: rgba(255, 255, 255, 0.568);
+                border: none;
+                border-radius: 5px;
+                height: 50px;
+                margin-bottom: 20px;
+                padding: 1rem;
             }
         }
     }

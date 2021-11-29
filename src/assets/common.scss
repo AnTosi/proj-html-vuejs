@@ -71,7 +71,8 @@ button {
 }
 
 .highlighted {
-    background-color: #08a0a0b6;
+    background-color: #08818125;
+    border-radius: 5px;
 }
 
 .grey_circle_border {
@@ -106,6 +107,7 @@ button {
 
 .text_lightgrey {
     color: #C0C3D0;
+    // color: $mute-grey-2;
 }
 
 .sm_circles_container {
@@ -142,5 +144,14 @@ button {
     font-weight: 700;
     letter-spacing: -0.5px;
     font-size: 0.9rem;
+}
+
+.sm_container {
+    width: 50%;
+    margin: auto;
+}
+
+.pr-4 {
+    padding-right: 3rem;
 }
 
