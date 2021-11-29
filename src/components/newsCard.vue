@@ -38,7 +38,7 @@ export default {
         img {
             object-fit: cover;
             width: 100%;
-            max-height: 100%;
+            height: 100%;
             border-radius: 0.5rem;
             opacity: 0.65;
         }

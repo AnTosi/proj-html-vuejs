@@ -13,8 +13,8 @@
 
 
             .half_button {
-            background-color: #08a0a04b;
-            color: #08A0A0;
+            background-color: #e9464928;
+            color: #e94649c2;
             padding-left: 1.5rem;
             border-top-left-radius: 1.3rem;
             border-bottom-left-radius: 1.3rem;

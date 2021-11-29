@@ -9,7 +9,7 @@
                     <span class="title superbold">
                         <span class="position-relative title superbold">
                             Logistics
-                            <span class="underline"></span>
+                            <span class="underline"></span> <br>
                         </span>
                          that goes further.
                     </span>
@@ -17,7 +17,7 @@
                         For 20 years working with the most innovative in the field of transport
                     </p>
 
-                    <button class="green">GET IN TOUCH</button>
+                    <button class="red">GET IN TOUCH</button>
                     <button class="transparent mx-4">READ MORE</button>
                 </div>
             </div>
@@ -41,12 +41,12 @@
                         </p>
 
                         <div>
-                            <span class="green_on_green p-2">Tradition</span>
-                            <span class="green_on_green p-2 mx-3">Quality</span>
-                            <span class="green_on_green p-2">Security</span>
+                            <span class="green_on_red p-2">Tradition</span>
+                            <span class="green_on_red p-2 mx-3">Quality</span>
+                            <span class="green_on_red p-2">Security</span>
                         </div>
 
-                        <button class="green mt-4">
+                        <button class="red mt-4">
                             READ MORE
                         </button>
                     </div>
@@ -171,11 +171,11 @@
                 </span>
                 <h3 class="superbold text-black mt-4 mb-5">
                     Latest
-                    <span class="green_on_green superbold px-2"> News</span>
+                    <span class="green_on_red superbold px-2"> News</span>
                 </h3>
                 <div class="d-flex justify-content-between  align-items-end">
                     <p class="text-muted mb-0">Every week we publish content about what is best in the business world.</p>
-                    <button class="green">SEE ALL</button>
+                    <button class="red">SEE ALL</button>
                 </div>
 
                 <div class="news_container d-flex justify-content-around mt-5">
@@ -222,7 +222,7 @@
                 <div class="right col-6">
                     <input type="text" placeholder="Name">
                     <input type="text" placeholder="Email">
-                    <button class="green">SUBSCRIBE</button>
+                    <button class="red">SUBSCRIBE</button>
                 </div>
 
             </div>
@@ -238,23 +238,23 @@
                     <span class="pre_title">SEND A MESSAGE</span>
                     <h3 class="superbold text-black mt-4 mb-4">
                         Get in 
-                        <span class="green_on_green superbold px-2"> Touch</span>
+                        <span class="green_on_red superbold px-2"> Touch</span>
                     </h3>
                     <p class="text-muted">
                         We will respond to your message as soon as possible.
                     </p>
 
                     <div class="form_container d-flex flex-wrap">
-                        <div class="col-6 input_container p-2"><input type="text" class="form_item" placeholder="Name"></div>
-                        <div class="col-6 input_container p-2"><input type="text" class="form_item" placeholder="Email"></div>
-                        <div class="col-6 input_container p-2"><input type="text" class="form_item" placeholder="Phone"></div>
+                        <div class="col-6 input_container p-2"><input type="text" class="form_item" placeholder="Name" required minlength="4"></div>
+                        <div class="col-6 input_container p-2"><input type="email" class="form_item" placeholder="Email"></div>
+                        <div class="col-6 input_container p-2"><input type="tel" class="form_item" placeholder="Phone"></div>
                         <div class="col-6 input_container p-2">
                             <select name="More Info" id="MoreInfo" class="form_item text-muted">
                                 <option value="More Info">More Info</option>
                             </select>            
                         </div>
-                        <div class="col-12 input_container p-2"><textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message" class="form_item"></textarea></div>
-                        <button class="green mt-4 mx-2">SEND</button>
+                        <div class="col-12 input_container p-2"><textarea name="Message" id="Message" cols="30" rows="5" placeholder="Message" class="form_item"></textarea></div>
+                        <button class="red mt-4 mx-2">SEND</button>
                     </div>
                 </div>
 
@@ -293,9 +293,8 @@
             </div>
         </section>
 
-        <section class="eight">
-        
-        </section> 
+        <!-- //section 7 -->
+
     </main>
     
 </template>
@@ -308,10 +307,10 @@ import AddressComponent from './AddressComponent.vue';
 
 export default {
   components: { 
-      NewsCard,
-      PhoneComponent,
-      MailComponent,
-    AddressComponent
+        NewsCard,
+        PhoneComponent,
+        MailComponent,
+        AddressComponent
 
     },
 
@@ -368,11 +367,12 @@ export default {
         .jumbotext {
             position: absolute;
             top: 40%;
-            right: 10%;
+            right: 5%;
             width: 40%;
             text-align: left;
             z-index: 5;
             color: white;
+            padding-right: 3rem;
 
             .title {
                 position: relative;
@@ -383,7 +383,7 @@ export default {
             .underline {
                 display: inline-block;
                 position: absolute;
-                background-color: #08a0a0b6;
+                background-color: $bg-light-red;
                 width: 98%;
                 height: 2rem;
                 top: 2.7rem;
@@ -460,6 +460,7 @@ export default {
 
             img {
                 opacity: 0.5;
+                height: 30px;
             }
 
         }
@@ -525,7 +526,7 @@ export default {
 
             span.icon {
                 display: flex;
-                background-color: $bg-light-green;
+                background-color: $bg-light-red;
                 padding: 1rem;
                 color: $main-dark-green;
                 height: 45px;

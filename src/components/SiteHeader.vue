@@ -90,17 +90,23 @@ export default {
             font-size: 1rem;
             li {
                 list-style: none;
-                padding-left: 1rem;
-                padding-right: 1rem;
+                margin-left: 1.3rem;
+                margin-right: 1.3rem;
                 padding-top: 0.5rem;
                 padding-bottom: 0.5rem;
-                border-radius: 5px;
+                
                 &.active {
                     // background-color: #048383;
-                    background-color: #058283;
+                    background-color: #E94649;
+                    border-radius: 4px;
+                    border: 1px solid $main-red;
+                    &:hover{
+                        border: 1px solid $main-red;
+                    }
                 }
                 &:hover {
                     cursor: pointer;
+                    border-bottom: 2px solid $main-red;
                 }
             }
         }

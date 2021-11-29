@@ -51,11 +51,11 @@ button {
     padding-bottom: 0.5rem;              
     border-radius: 5px;
     color: white;
-    border: 1px solid $main-dark-green;
+    border: 1px solid $main-red;
     font-weight: 500;
 
-    &.green {
-        background-color: $main-dark-green;
+    &.red {
+        background-color: $main-red;
         
     }
 
@@ -77,7 +77,7 @@ button {
 }
 
 .highlighted {
-    background-color: #08818125;
+    background-color: #e946492d;
     border-radius: 5px;
 }
 
@@ -129,7 +129,7 @@ button {
     z-index: 2;
 
     .sm_circle {
-        background-color: #B3E1DB;
+        background-color: #e9464950;
         height: 7px;
         width: 7px;
         border-radius: 50%;
@@ -139,9 +139,9 @@ button {
 
 }
 
-.green_on_green {
+.green_on_red {
     color: $main-dark-green;
-    background-color: $bg-light-green;
+    background-color: #e9464942;
     border-radius: 3px;
 }
 
