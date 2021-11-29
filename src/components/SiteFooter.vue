@@ -31,6 +31,12 @@
                 />
             </div>
         </div>
+        <div class="bottom_page">
+            <div class="lg_container d-flex justify-content-between">
+                <div>Enjoy the low price. We are tracking any intention of piracy.</div>
+                <div><i class="far fa-copyright"></i> 2020 NEXGEN is Proudly Powered by <span class="text-green">Codings.</span></div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -97,7 +103,9 @@ export default {
             padding-left: 0 !important;
         }
     
-    
+        .bottom_page {
+            background-color: #0D0D11;
+        }
     }
 
 </style>
