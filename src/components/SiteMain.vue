@@ -249,9 +249,11 @@
                         <div class="col-6 input_container p-2"><input type="email" class="form_item" placeholder="Email"></div>
                         <div class="col-6 input_container p-2"><input type="tel" class="form_item" placeholder="Phone"></div>
                         <div class="col-6 input_container p-2">
-                            <select name="More Info" id="MoreInfo" class="form_item text-muted">
-                                <option value="More Info">More Info</option>
-                            </select>            
+                            <div class="select_box">
+                                <select name="More Info" id="MoreInfo" class="form_item text-muted">
+                                    <option value="More Info">More Info</option>
+                                </select>            
+                            </div>
                         </div>
                         <div class="col-12 input_container p-2"><textarea name="Message" id="Message" cols="30" rows="5" placeholder="Message" class="form_item"></textarea></div>
                         <button class="red mt-4 mx-2">SEND</button>
@@ -484,7 +486,7 @@ export default {
             input {
                 width: 90%;
                 margin: auto;
-                background-color: rgba(255, 255, 255, 0.568);
+                background-color: rgba(255, 255, 255, 0.5);
                 border: none;
                 border-radius: 5px;
                 height: 3rem;
@@ -510,9 +512,15 @@ export default {
                 height: 3rem;
                 
             }
+            .select_box {
+                padding-right: 0.5rem;
+                background-color: #7373732d;
+                border-radius: 5px;
+                select {
+                    background-color: transparent;
+                    height: 3rem;
+                }
 
-            select {
-                height: 3rem;
             }
 
             textarea {

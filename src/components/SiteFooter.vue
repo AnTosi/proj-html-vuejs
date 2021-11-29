@@ -99,8 +99,12 @@ export default {
         background-position-y: center;
         color: $muted-grey;
 
-        span.component {
+        span.contact_component {
             padding-left: 0 !important;
+
+            i {
+                padding-left: 0 !important;
+            }
         }
     
         .bottom_page {
