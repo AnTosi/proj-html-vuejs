@@ -58,7 +58,7 @@ export default {
   components: { 
         PhoneComponent,
         MailComponent,
-    NexGen 
+        NexGen 
     },
     name: 'SiteHeader',
     props: {
@@ -72,6 +72,7 @@ export default {
 <style lang="scss">
 
     @import '../assets/variables.scss';
+    @import '../assets/common.scss';
 
     .header {
         width: 100%;

@@ -11,7 +11,8 @@
     </div>
 
     <footer>
-      <SiteFooter/>
+      <SiteFooter
+      :contacts="Object"/>
     </footer>
     
   </div>

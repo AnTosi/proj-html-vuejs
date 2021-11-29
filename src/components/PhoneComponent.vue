@@ -10,7 +10,7 @@
 <script>
 export default {
     props: {
-        "contacts": Object,
+        contacts: Object,
     }
 }
 </script>
