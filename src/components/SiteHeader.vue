@@ -100,6 +100,8 @@ export default {
                     background-color: #E94649;
                     border-radius: 4px;
                     border: 1px solid $main-red;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
                     &:hover{
                         border: 1px solid $main-red;
                     }

@@ -221,7 +221,7 @@
 
                 <div class="right col-6">
                     <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
+                    <input type="email" placeholder="Email">
                     <button class="red">SUBSCRIBE</button>
                 </div>
 
@@ -385,7 +385,7 @@ export default {
             .underline {
                 display: inline-block;
                 position: absolute;
-                background-color: $bg-light-red;
+                background-color: #e9464970;
                 width: 98%;
                 height: 2rem;
                 top: 2.7rem;
